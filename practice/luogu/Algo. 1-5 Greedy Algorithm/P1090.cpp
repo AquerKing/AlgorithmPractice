@@ -10,8 +10,8 @@ struct Comparator {
 };
 
 int main() {
-    std::cout.sync_with_stdio(false);
-    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);;
+    std::cin.tie(nullptr);
 
     std::priority_queue<u32, std::vector<u32>, Comparator> pile;
     int n;

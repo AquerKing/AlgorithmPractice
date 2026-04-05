@@ -22,8 +22,8 @@ struct Competition {
 std::array<Competition, MAX_LEN> competitions;
 
 int main() {
-    std::cout.sync_with_stdio(false);
-    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);;
+    std::cin.tie(nullptr);
 
     int n;
     std::cin >> n;

@@ -23,8 +23,8 @@ struct CoinPile {
 std::array<CoinPile, MAX_SIZE> piles;
 
 int main() {
-    std::cout.sync_with_stdio(false);
-    std::cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);;
+    std::cin.tie(nullptr);
 
     int n, t;
     float taken = 0.0f;
