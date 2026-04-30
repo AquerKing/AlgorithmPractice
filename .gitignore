@@ -5,6 +5,7 @@ build/
 
 # files
 /test.cpp
+/.clang-format
 
 # except
 !/.vscode/problem_main.code-snippets
