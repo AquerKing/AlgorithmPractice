@@ -1,7 +1,10 @@
 # folders
-.vscode/
-.zed/
+.vscode/*
+.zed/*
 build/
 
 # files
 /test.cpp
+
+# except
+!/.vscode/problem_main.code-snippets
