@@ -26,11 +26,29 @@
 	// 	"description": "Insert test block"
 	// }
 	
-	"C++ Main Function": {
+	"C++ Main Function for Algorithm Problem": {
 		"scope": "cpp",
 		"prefix": "algomain",
 		"body": [
 			"#include <iostream>",
+			"",
+			"int main() {",
+			"    std::ios::sync_with_stdio(false);",
+			"    std::cout.tie(nullptr);",
+			"    $0",
+			"    return 0;",
+			"}"
+		],
+		"description": "Insert a standard C++ main function"
+	},
+
+	"C++ Main Function for Algorithm Problem with Macros": {
+		"scope": "cpp",
+		"prefix": "algomain_macro",
+		"body": [
+			"#include <iostream>",
+			"",
+			"#define MAX_LEN $1",
 			"",
 			"int main() {",
 			"    std::ios::sync_with_stdio(false);",
