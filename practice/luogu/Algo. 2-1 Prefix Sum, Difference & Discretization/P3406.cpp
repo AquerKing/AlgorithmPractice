@@ -5,9 +5,9 @@
 #define MAX_LEN 100000
 
 std::array<int, MAX_LEN + 2> diff = {};
-std::array<uint, MAX_LEN + 1> a = {};
-std::array<uint, MAX_LEN + 1> b = {};
-std::array<uint, MAX_LEN + 1> c = {};
+std::array<unsigned int, MAX_LEN + 1> a = {};
+std::array<unsigned int, MAX_LEN + 1> b = {};
+std::array<unsigned int, MAX_LEN + 1> c = {};
 int n, m;
 
 int main() {
