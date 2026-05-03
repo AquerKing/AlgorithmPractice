@@ -7,7 +7,7 @@
 std::array<int, MAX_LEN + 2> diff = {};
 std::array<unsigned int, MAX_LEN + 1> a = {};
 std::array<unsigned int, MAX_LEN + 1> b = {};
-std::array<unsigned int, MAX_LEN + 1> c = {};
+std::array<unsigned int, MAX_LEN + 1> non_equal_constrains = {};
 int n, m;
 
 int main() {
@@ -27,10 +27,10 @@ int main() {
 
     unsigned long long ans = 0;
     for (int i = 1; i < n; ++i) {
-        std::cin >> a[i] >> b[i] >> c[i];
+        std::cin >> a[i] >> b[i] >> non_equal_constrains[i];
         diff[i] += diff[i - 1];
         ans += std::min(static_cast<unsigned long long>(diff[i]) * a[i],
-                        c[i] + static_cast<unsigned long long>(diff[i]) * b[i]);
+                        non_equal_constrains[i] + static_cast<unsigned long long>(diff[i]) * b[i]);
     }
 
     std::cout << ans << std::endl;
