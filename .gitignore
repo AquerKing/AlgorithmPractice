@@ -9,3 +9,4 @@ build/
 
 # except
 !/.vscode/problem_main.code-snippets
+!/.vscode/settings.json
